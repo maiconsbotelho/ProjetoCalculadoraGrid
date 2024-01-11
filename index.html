@@ -8,25 +8,27 @@
     </head>
     <body>
         <div id="calculadora">
-            <output id="display">0</output>
-            <button>AC</button>
-            <button>%</button>
-            <button>X</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>=</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="span-row-2">+</button>
-            <button class="span-column-2">0</button>
-            <button>,</button> 
-        </div>     
+            <input id="display" type="text" class="display" placeholder="0" disabled="disabled" />
+            
+            <button onclick="calcular('acao', 'c')" type="button" class="span-column-2 btn">C</button>
+
+            <button onclick="calcular('acao', '/')" type="button" class="btn">/</button>
+            <button onclick="calcular('acao', '*')" type="button" class="btn">x</button>
+            <button onclick="calcular('valor', '7')" type="button" class="btn">7</button>
+            <button onclick="calcular('valor', '8')" type="button" class="btn">8</button>
+            <button onclick="calcular('valor', '9')" type="button" class="btn">9</button>
+            <button onclick="calcular('acao', '-')" type="button" class="btn">-</button>
+            <button onclick="calcular('valor', '4')" type="button" class="btn">4</button>
+            <button onclick="calcular('valor', '5')" type="button" class="btn">5</button>
+            <button onclick="calcular('valor', '6')" type="button" class="btn">6</button>
+            <button onclick="calcular('acao', '+')" type="button" class="btn">+</button>
+            <button onclick="calcular('valor', '1')" type="button" class="btn">1</button>
+            <button onclick="calcular('valor', '2')" type="button" class="btn">2</button>
+            <button onclick="calcular('valor', '3')" type="button" class="btn">3</button>
+            <button onclick="calcular('acao', '=')" type="button" class="span-row-2 btn">=</button>
+            <button onclick="calcular('valor', '0')" type="button" class="span-column-2 btn">0</button>
+            <button onclick="calcular('acao', '.')" type="button" class="btn">,</button> 
+        </div> 
+        <script src="script.js"></script>    
     </body>
 </html>

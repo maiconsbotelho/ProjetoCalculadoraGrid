@@ -29,13 +29,15 @@ body {
 #display {
     box-shadow: inset 3px 3px 0 #161616;
     font-size: 2em;
+    height: 1.5em;
     margin-bottom: 20px;
     padding: 10px 8px;
+    text-align: right;
 
     grid-column: 1 / -1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+   
 }
 
 button {
